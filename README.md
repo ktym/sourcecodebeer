@@ -1,6 +1,6 @@
 # sourcecodebeer
 
-福井県坂井市の三国オーシャンリゾート＆ホテルで7月6日から開催の[国内版バイオハッカソン BH25.7](https://github.com/dbcls/bh25.7/wiki) に向かいながら、[ネット記事](https://www.nomooo.jp/article/2025/07/04/16470.html)でたまたま見かけた[ソースコードビール](https://kurand.jp/products/sourcecodebeer)。
+福井県坂井市の三国オーシャンリゾート＆ホテルで2025年7月6日から開催の[国内版バイオハッカソン BH25.7](https://github.com/dbcls/bh25.7/wiki) に向かいながら、[ネット記事](https://www.nomooo.jp/article/2025/07/04/16470.html)でたまたま見かけた[ソースコードビール](https://kurand.jp/products/sourcecodebeer)。
 
 ![ソースコードビール](https://www.nomooo.jp/imgs/p/iUiNmOhRM6W7D4hMyh6KmQ2dKJeWlZSTkpGQ/57244.jpg)
 
