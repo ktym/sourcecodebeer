@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <title>SOURCE CODE BEER</title>
+  <style>
+    body {
+      font-family: sans-serif;
+      padding: 2em;
+    }
+    input[type="text"] {
+      padding: 0.5em;
+      width: 200px;
+      font-size: 1em;
+    }
+    button {
+      padding: 0.5em 1em;
+      font-size: 1em;
+      margin-left: 0.5em;
+    }
+    pre {
+      margin-top: 1em;
+      background: #f4f4f4;
+      padding: 1em;
+      white-space: pre-wrap;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>SOURCE CODE BEER</h1>
+
+  <form id="decryptForm">
+    <label for="password">パスワード:</label>
+    <input type="text" id="password" placeholder="例: BEER" required />
+    <button type="submit">復号する</button>
+  </form>
+
+  <pre id="output">未実行</pre>
+
+  <script>
+    // console.log を出力に上書き
+    const originalLog = console.log;
+    console.log = (...args) => {
+      document.getElementById("output").textContent = args.join(" ");
+      originalLog(...args);
+    };
+
+    // フォーム送信時に source_code(password) を呼び出す
+    document.getElementById("decryptForm").addEventListener("submit", (e) => {
+      e.preventDefault();
+      const pw = document.getElementById("password").value.trim();
+      if (typeof source_code === "function") {
+        try {
+          console.log("復号中...");
+          source_code(pw);
+        } catch (err) {
+          console.log("実行時エラー:", err.message);
+        }
+      } else {
+        console.log("source_code() が見つかりません");
+      }
+    });
+  </script>
+
+  <!-- 難読化された本体コード -->
+  <script src="sourcecodebeer-decoded.js"></script>
+
+</body>
+</html>
